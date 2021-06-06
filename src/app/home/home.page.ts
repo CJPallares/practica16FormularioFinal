@@ -108,7 +108,8 @@ export class HomePage implements OnInit{
 
   validDNI(fc: FormControl) {
     if(fc.value===''){
-      return null;  //se valida
+      return null;  //se valida 
+      //luego se comprueba en validarGrupoDatosUsuario si el dni está vacío y no lo validará, pero aquí lo hace así.
     }
     var letras = "TRWAGMYFPDXBNJZSQVHLCKE";
     var numeros = fc.value.substring(0, fc.value.length - 1);
