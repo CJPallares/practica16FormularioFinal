@@ -79,7 +79,7 @@ export class HomePage implements OnInit{
   }
 
   
-
+  // Relaciona fecha y edad para validarlas
   validarGrupoDatosUsuario(fg: FormGroup){
     var fechaNacimiento:string=fg.controls['fechaNacimientoUsuario'].value;
     var dni:string=fg.controls['dniUsuario'].value;
